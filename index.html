@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spotify - Web Player: Music for everyone</title>
+	<!-- favicon -->
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- <div id="cookieAlert">
+		<p>We and our partners use cookies to personalize your experience, to show you ads based on your interests, and
+			for measurement and analytics purposes. By using our website and services, you agree to our use of cookies
+			as described in our Cookie Policy.</p>
+		<span id="closeCookieAlert">x</span>
+	</div> -->
+
+	<div class="bottombar">
+		<div>
+			<p class="bottombar__pretitle">
+				Preview of Spotify
+			</p>
+			<p class="bottombar__title">
+				Sign up to get unlimited songs and podcasts with occassional ads. No credit card required.
+			</p>
+		</div>
+		<div>
+			<button class="bottombar__button">Sign up free</button>
+		</div>
+	</div>
+	<main>
+
+		<aside class="side ">
+			<h1 class="side__title"><i class="fa-brands fa-spotify"></i> </h1>
+			<nav class="nav">
+				<ul class="nav__links">
+					<!-- <li class="active"><i class="fa-solid fa-house"></i> &nbsp;&nbsp;Home</li>
+					<li><i class="fa-solid fa-magnifying-glass"></i> &nbsp;&nbsp;Search</li> -->
+					<li><i class="fa-solid fa-book"></i> &nbsp;&nbsp;Your Library</li>
+				</ul>
+				<ul class="nav__actions">
+					<li><i class="fa-solid- fa-plus-"></i> &nbsp;&nbsp;Create Your First Playlist</li>
+					<li> It's easy, we'll help you</li>
+					
+					<button type="button" class="btn btn-light ">Create a playlist</button>
+
+					<!-- <li><i class="fa-solid fa-heart"></i> &nbsp;&nbsp;Liked Songs</li> -->
+					<li> Let's find some podcasts to follow</li>
+					<li>We'll keep you updated on new episodes</li>
+					<button type="button" class="btn btn-light ">Browse Podcast</button>
+				</ul>
+				<ul class="nav__extra-links">
+					<li><a href="#">Legal</a></li>
+					<li><a href="#">Privacy Center</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Cookies</a></li>
+					<li><a href="#">About Ads</a></li>
+					<li><a href="#">Accessibility</a></li>
+					
+				</ul>
+				<span class="chip">
+					<i class="fa-solid fa-globe"></i> English
+				</span>
+			</nav>
+			
+		</aside>
+		<section class="main">
+			<div class="topbar">
+				<ul class="nav__links"><li class="active" style="list-style-type: none;"><i class="fa-solid fa-house"></i> </li></ul>
+				<!-- <li style="list-style-type: none;"><i class="fa-solid fa-magnifying-glass"></i>  -->
+					<form>
+  <input type="text" name="search" placeholder="What do You want to play?..">
+</form></li>
+				
+             
+				<!-- <div class="topbar__arrows">
+
+					<span class="arrow"><i class="fa-solid fa-arrow-left"></i></span>
+					<span class="arrow"><i class="fa-solid fa-arrow-right"></i></span>
+				</div> -->
+				<div class="topbar__main">
+					<!-- <ul class="topbar__links">
+						<li>Premium</li>
+						<li>Support</li>
+						<li>Download</li>
+					</ul> -->
+					<ul class="topbar__signup">
+						<li>Sign Up</li>
+						<li><button class="round-button">Log In</button></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="shelf col-8">
+				<h2 class="shelf__heading">Popular Artists</h2>
+				<div class="shelf__grid">
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover artist" src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Pritam</h3>
+						<p class="shelf__grid__item__desc">Artist.</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover artist"  src="https://i.scdn.co/image/ab67616100005174bd6fbc7d0973cc33940781ad">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Sachin Jigar</h3>
+						<p class="shelf__grid__item__desc">Artist</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover artist" src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Arjith Singh</h3>
+						<p class="shelf__grid__item__desc">Artist</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover artist" src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">A R Rahman</h3>
+						<p class="shelf__grid__item__desc">Artist</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover artist" src="https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Anirudh Ravichander</h3>
+						<p class="shelf__grid__item__desc">Artist</p>
+					</div>
+			
+					<!-- <div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Atif Aslam</h3>
+						<p class="shelf__grid__item__desc">Artist</p>
+					</div> -->
+				</div>
+			</div>
+			
+			<div class="shelf ">
+				<h2 class="shelf__heading">Popular Albums</h2>
+				<div class="shelf__grid">
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover popular" src="https://i.scdn.co/image/ab67616d0000b2736404721c1943d5069f0805f3">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Aashiqui 2</h3>
+						<p class="shelf__grid__item__desc"> Mithoon Ankit Tiwari Jeet Gannguli</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover " style="border: none;" src="https://pbs.twimg.com/media/GWjzNVEXoAACLHs.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">GLORY</h3>
+						<p class="shelf__grid__item__desc">Yo Yo Honey Singh</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Jo Tum Mere Ho</h3>
+						<p class="shelf__grid__item__desc">Anuv Jain</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://i.scdn.co/image/ab67616d0000b273bb25239324c4e16ae01fda36">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Making Memories</h3>
+						<p class="shelf__grid__item__desc">Karan Aujla &amp; Ikky</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">Yeh Jawaani Hai Deewani</h3>
+						<p class="shelf__grid__item__desc">Pritam</p>
+					</div>
+			
+					
+				</div>
+			</div>
+			
+			
+			
+			
+			
+			
+			<div class="shelf">
+				<h2 class="shelf__heading">popular Radio</h2>
+				<div class="shelf__grid">
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en-GB">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title">
+							</h3>
+						<p class="shelf__grid__item__desc">With Sachin-Jigar, Mithoon, Pritam and more</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en-GB">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title"></h3>
+						<p class="shelf__grid__item__desc">
+							With Karan Aujla, Shubh, AP Dhillon and more</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3gBKY0y3dFFVRqicLnVZYz/en-GB">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<h3 class="shelf__grid__item__title"></h3>
+						<p class="shelf__grid__item__desc">With Abhijeet, Jatin-Lalit, Kumar Sanu and more</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4K6blSRoklNdpw4mzLxwfn/en-GB">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<!-- <h3 class="shelf__grid__item__title">Rock Classics</h3> -->
+						<p class="shelf__grid__item__desc">With Abhijeet, Asha Bhosle, Jatin-Lalit and more</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en-GB">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<!-- <h3 class="shelf__grid__item__title">Chill Hits</h3> -->
+						<p class="shelf__grid__item__desc">
+							With Mohit Chauhan, Armaan Malik, Atif Aslam and more</p>
+					</div>
+			
+					
+				</div>
+			</div>
+			
+			<div class="shelf">
+				<h2 class="shelf__heading">Featured Chart</h2>
+				<div class="shelf__grid">
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<!-- <h3 class="shelf__grid__item__title">The Sound of Mumbai</h3> -->
+						<p class="shelf__grid__item__desc">
+							Your weekly update of the most played trac..</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<!-- <h3 class="shelf__grid__item__title">The Sound of Kolkata</h3> -->
+						<p class="shelf__grid__item__desc">
+							Your weekly update of the most played trac..</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<!-- <h3 class="shelf__grid__item__title">The Sound of Delhi</h3> -->
+						<p class="shelf__grid__item__desc">
+							Your weekly update of the most played trac..</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<!-- <h3 class="shelf__grid__item__title">The Sound of Bengaluru</h3> -->
+						<p class="shelf__grid__item__desc">
+							Your weekly update of the most played trac..</p>
+					</div>
+			
+					<div class="shelf__grid__item">
+						<img class="shelf__grid__item__cover" src="imgs/the_sound_of_chennai_in.jpg">
+						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+						<!-- <h3 class="shelf__grid__item__title">The Sound of Chennai</h3> -->
+						<p class="shelf__grid__item__desc">
+							Your weekly update of the most played trac..</p>
+					</div>
+			
+					
+				</div>
+
+				<div class="shelf">
+					<h2 class="shelf__heading">Playlists from our Editors</h2>
+					<div class="shelf__grid">
+						<div class="shelf__grid__item">
+							<img class="shelf__grid__item__cover" src="https://i.scdn.co/image/ab67706f0000000255be59b7be2929112e7ac927">
+							<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+							<!-- <h3 class="shelf__grid__item__title">The Sound of Mumbai</h3> -->
+							<p class="shelf__grid__item__desc">
+								Your weekly update of the most played trac..</p>
+						</div>
+				
+						<div class="shelf__grid__item">
+							<img class="shelf__grid__item__cover" src="https://i.scdn.co/image/ab67706f000000022a57554f0c2a051479c4994a">
+							<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+							<!-- <h3 class="shelf__grid__item__title">The Sound of Kolkata</h3> -->
+							<p class="shelf__grid__item__desc">
+								Your weekly update of the most played trac..</p>
+						</div>
+				
+						<div class="shelf__grid__item">
+							<img class="shelf__grid__item__cover" src="https://i.scdn.co/image/ab67706f000000028198a83727d00f09319dff2c">
+							<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+							<!-- <h3 class="shelf__grid__item__title">The Sound of Delhi</h3> -->
+							<p class="shelf__grid__item__desc">
+								Your weekly update of the most played trac..</p>
+						</div>
+				
+						<div class="shelf__grid__item">
+							<img class="shelf__grid__item__cover" src="https://i.scdn.co/image/ab67706f000000029385ce8e365c6b8ba3f70d4b">
+							<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+							<!-- <h3 class="shelf__grid__item__title">The Sound of Bengaluru</h3> -->
+							<p class="shelf__grid__item__desc">
+								Your weekly update of the most played trac..</p>
+						</div>
+				
+						<div class="shelf__grid__item">
+							<img class="shelf__grid__item__cover" src="https://i.scdn.co/image/ab67706f00000002d6710ea346fec48e89d77dba">
+							<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
+							<!-- <h3 class="shelf__grid__item__title">The Sound of Chennai</h3> -->
+							<p class="shelf__grid__item__desc">
+								Your weekly update of the most played trac..</p>
+						</div>
+				
+						
+					</div>
+			</div>
+			
+			<div class="footer">
+				<div class="footer__links">
+					<div class="footer__links__block">
+						<h3 class="footer__links__block__title">Company</h3>
+						<ul class="footer__links__list">
+							<li><a href="#">About</a></li>
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">For the Record</a></li>
+						</ul>
+					</div>
+					<div class="footer__links__block">
+						<h3 class="footer__links__block__title">Communities</h3>
+						<ul class="footer__links__list">
+							<li><a href="#">For artists</a></li>
+							<li><a href="#">Developers</a></li>
+							<li><a href="#">Advertising</a></li>
+							<li><a href="#">Investors</a></li>
+							<li><a href="#">Vendors</a></li>
+							<li><a href="#">Spotify for Work</a></li>
+						</ul>
+					</div>
+					<div class="footer__links__block">
+						<h3 class="footer__links__block__title">Useful links</h3>
+						<ul class="footer__links__list">
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Free Mobile App</a></li>
+						</ul>
+					</div>
+					<div class="footer__links__block">
+						<h3 class="footer__links__block__title">Communities</h3>
+						<ul class="footer__links__list">
+							<li><a href="#">Premium Individual</a></li>
+							<li><a href="#">Premium Duo</a></li>
+							<li><a href="#">Premium Family</a></li>
+							<li><a href="#">Premium Student</a></li>
+							<li><a href="#">Spotify Free</a></li>
+						
+						</ul>
+					</div>
+				</div>
+				<div class="footer__icons">
+					<ul class="footer__icons__list">
+						<li class="footer__icon"><i class="fa-brands fa-instagram"></i></li>
+						<li class="footer__icon"><i class="fa-brands fa-twitter"></i></li>
+						<li class="footer__icon"><i class="fa-brands fa-facebook"></i></li>
+					</ul>
+				</div>
+			</div>
+			<div class="post-footer">
+				<hr class="post-footer__line">
+				<p class="post-footer__attrib">&copy; 2024 Spotify AB</p>
+			</div>
+			</section>
+			</main>
+
+	<!-- <script src="script.js"></script> -->
+</body>
+
+</html>
