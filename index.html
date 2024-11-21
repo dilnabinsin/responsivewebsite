@@ -8,6 +8,7 @@
 	<title>Spotify - Web Player: Music for everyone</title>
 	<!-- favicon -->
 	<link rel="icon" href="favicon.ico">
+	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 		integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -37,9 +38,9 @@
 	</div>
 	<main>
 
-		<aside class="side ">
+		<aside class="side col-4">
 			<h1 class="side__title"><i class="fa-brands fa-spotify"></i> </h1>
-			<nav class="nav">
+			<nav class="nav navbar-expand-lg">
 				<ul class="nav__links">
 					<!-- <li class="active"><i class="fa-solid fa-house"></i> &nbsp;&nbsp;Home</li>
 					<li><i class="fa-solid fa-magnifying-glass"></i> &nbsp;&nbsp;Search</li> -->
@@ -49,12 +50,12 @@
 					<li><i class="fa-solid- fa-plus-"></i> &nbsp;&nbsp;Create Your First Playlist</li>
 					<li> It's easy, we'll help you</li>
 					
-					<button type="button" class="btn btn-light ">Create a playlist</button>
+					<button type="button" class="btn btn-sm btn-light">Create a playlist</button>
 
 					<!-- <li><i class="fa-solid fa-heart"></i> &nbsp;&nbsp;Liked Songs</li> -->
 					<li> Let's find some podcasts to follow</li>
 					<li>We'll keep you updated on new episodes</li>
-					<button type="button" class="btn btn-light ">Browse Podcast</button>
+					<button type="button" class="btn btn-sm  btn-light ">Browse Podcast</button>
 				</ul>
 				<ul class="nav__extra-links">
 					<li><a href="#">Legal</a></li>
@@ -71,7 +72,7 @@
 			</nav>
 			
 		</aside>
-		<section class="main">
+		<section class="main col-8">
 			<div class="topbar">
 				<ul class="nav__links"><li class="active" style="list-style-type: none;"><i class="fa-solid fa-house"></i> </li></ul>
 				<!-- <li style="list-style-type: none;"><i class="fa-solid fa-magnifying-glass"></i>  -->
@@ -98,7 +99,7 @@
 				</div>
 			</div>
 
-			<div class="shelf col-8">
+			<div class="shelf col-sm-8">
 				<h2 class="shelf__heading">Popular Artists</h2>
 				<div class="shelf__grid">
 					<div class="shelf__grid__item">
@@ -266,7 +267,7 @@
 					</div>
 			
 					<div class="shelf__grid__item">
-						<img class="shelf__grid__item__cover" src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg">
+						<img class="shelf__grid__item__cover" src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg">
 						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
 						<!-- <h3 class="shelf__grid__item__title">The Sound of Bengaluru</h3> -->
 						<p class="shelf__grid__item__desc">
@@ -274,7 +275,7 @@
 					</div>
 			
 					<div class="shelf__grid__item">
-						<img class="shelf__grid__item__cover" src="imgs/the_sound_of_chennai_in.jpg">
+						<img class="shelf__grid__item__cover" src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg">
 						<div><i class="shelf__grid__item__play fa-solid fa-circle-play"></i></div>
 						<!-- <h3 class="shelf__grid__item__title">The Sound of Chennai</h3> -->
 						<p class="shelf__grid__item__desc">
